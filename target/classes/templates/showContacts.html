@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toys</title>
+<link rel="stylesheet" type="text/css" media="all"
+href="../static/CSS/myCSS2.css" 
+th:href="@{/CSS/myCSS2.css}"/>
+</head>
+<body class="show">
+<br/>
+<h1>List Of Toys</h1>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Price</th>
+		<th>Quantity</th>
+	</tr>
+	
+	<tr th:each="toy : ${toys}">
+	<td th:text="${toy.name}"></td>
+	<td th:text="${toy.price}"></td>
+	<td th:text="${toy.quantity}"></td>
+	<td><a href="" th:href="@{/edit/{id}(id=${toy.id})}">EDIT</a></td>
+	<td><a href="" th:href="@{/delete/{id}(id=${toy.id})}">DELETE</a></td>
+	</tr>
+</table><br/>
+<a th:href="@{/}">Homepage</a>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<style>
+div{
+	color:red;
+}
+h1{
+	color:blue;
+}
+h2{
+	color:green;
+}
+
+table {
+	border-collapse: collapse;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+tr:hover {
+	background-color: #fcf8b6;
+}
+
+th {
+	font-family: arial;
+}
+
+th, td {
+	text-align: left;
+	padding: 8px;
+	border: 1px solid #ddd;
+}
+
+tr {
+	background-color: #f2f2f2
+}
+
+th {
+	background-color: #f77707;
+	color: white;
+}
+</style>
+</head>
+<body>
+<h1>Finals</h1>
+<h2 th:text="'Welcome ' + ${name}"></h2>
+<div th:text="${message}"></div>
+<div th:text="${footer}"></div>
+
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Price</th>
+		<th>Quantity</th>
+	</tr>
+	
+	<tr th:each="toy : ${toys}">
+	<td th:text="${toy.name}"></td>
+	<td th:text="${toy.price}"></td>
+	<td th:text="${toy.quantity}"></td>
+	</tr>
+</table>
+
+
+</body>
+</html>

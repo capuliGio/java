@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Page</title>
+<link rel="stylesheet" type="text/css" media="all"
+	href="../static/CSS/myCSS2.css" th:href="@{/CSS/myCSS2.css}" />
+</head>
+<body class="add">
+<h1>Registration Page</h1>
+	<form class="reg" th:action="@{/register}" method="post">
+		Name: <input type="text" name="name" size="23"/><br><br>
+		Password: <input type="password" name="password" /><br><br>
+		Check for desired role:<br>
+		<input type="radio" id="role1" name="role1" value="boss">
+		<label for="role1"> Boss</label><br>
+		<input type="radio" id="role2" name="role2" value="worker">
+		<label for="role2"> Worker</label><br>
+		
+		
+		<input type="submit" value="Register" /><br>
+		
+	</form><br>
+	
+	Go back to the <a class="a" th:href="@{/login}">Login Page</a><br>
+	
+	Go back to the <a class="a" th:href="@{/}">HomePage</a>
+</body>
+</html>

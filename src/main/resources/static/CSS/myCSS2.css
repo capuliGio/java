@@ -1,0 +1,106 @@
+.add {
+	background-color: #f7b063;
+	text-align: center;
+}
+
+.show {
+	background-color: #ffea5d;
+	text-align: center;
+}
+
+.back {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+.alert{
+	color:red;
+}
+
+.reg{
+	    padding: 65px;
+}
+
+h1 {
+	color: #404241;
+}
+
+img {
+	width: 5%;
+}
+
+.login{
+    margin-left: 32px;
+}
+
+.register{
+	text-align: center;
+}
+
+.a{
+	margin: 0;
+}
+
+
+.logout {
+    text-align: left;
+    margin-left: 42%;
+    margin-right: 38%;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 0;
+}
+
+form {
+	text-align: left;
+	margin-left: 38%;
+	margin-right: 38%;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 46px;
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 12px 24px;
+	text-decoration: none;
+	margin: 4px 66px;
+	cursor: pointer;
+}
+
+a {
+	margin: 72px;
+}
+
+table {
+	border-collapse: collapse;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+tr:hover {
+	background-color: #fcf8b6;
+}
+
+th {
+	font-family: arial;
+}
+
+th, td {
+	text-align: left;
+	padding: 8px;
+	border: 1px solid #ddd;
+}
+
+tr {
+	background-color: #f2f2f2
+}
+
+th {
+	background-color: #f77707;
+	color: white;
+}

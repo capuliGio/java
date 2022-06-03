@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<meta charset="ISO-8859-1">
+<title>Tony Toys</title>
+</head>
+<body>
+
+
+<h1>This is the main Root page</h1>
+<br>
+<div sec:authorize="isAuthenticated()">
+	User's Name: <span sec:authentication="name"></span>
+	<br>
+	Roles: <span sec:authentication="principal.authorities"></span>
+	<br>
+	<form th:action="@{/logout}" method="post">
+		<input type="submit" value="logout">
+	</form>
+</div>
+<br><br>
+Go to the <a th:href="@{/member}">add Toys page</a><br>
+Go to the <a th:href="@{/print}">view Toys page</a><br>
+Go to the <a th:href="@{/register}">registration page</a><br>
+Go to the <a th:href="@{/email}">email page</a>
+</body>
+</html>
